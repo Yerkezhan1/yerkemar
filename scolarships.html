@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarships</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style-scolar.css"><!-- keep your CSS name or rename -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">StudyNavigator</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li><a href="scolarships.html"style="color: #5ed3a4; font-weight: bold;">Scholarships</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-links">
+            </div>
+        </nav>
+    </header>
+    <section class="study-dream-section">
+      <div class="title-image">
+          <h1 class="country-title">
+            Scholarships
+          </h1>
+      </div>
+      <div class="container">
+        <div class="search-header">
+          <h2>Turn Your Dream Into Reality</h2>
+          <p>Unlock your potential with scholarships that support your academic journey and make studying abroad more accessible.</p>
+        </div>
+
+        <div class="search-form">
+            <img class="pointer" src="/assets/pointer.png" alt="">
+            <div class="dropdown-container-destination">
+                <select id="city-select" class="dropdown">
+                    <option value="">City of Destination</option>
+                    <option value="Almaty">Almaty</option>
+                    <option value="Nur-Sultan">Nur-Sultan</option>
+                    <option value="Berlin">Berlin</option>
+                    <option value="London">London</option>
+                    <option value="Washington D.C.">Washington D.C.</option>
+                    <option value="Frankfurt">Frankfurt</option>
+                    <option value="Seoul">Seoul</option>
+                    <option value="Multiple">Multiple</option>
+                </select>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="dropdown-container-master">
+                <select id="level-select" class="dropdown">
+                    <option value="">All Levels</option>
+                    <option value="Bachelor">Bachelor</option>
+                    <option value="Master">Master</option>
+                    <option value="PhD">PhD</option>
+                </select>
+            </div>
+            <button id="search-btn" class="search-button" type="button">
+                <p>Search</p>
+                <img src="/assets/search.png" alt="Search">
+            </button>
+        </div>
+
+        <div class="card-grid" id="card-grid">
+          <!-- JS will inject cards here -->
+        </div>
+      </div>
+    </section>
+    <footer>
+        <div class="footer-logo">
+            <h2>StudyNavigator</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/timurovnaa_e?igsh=MWNkNGdrb3NocDN6NQ%3D%3D&utm_source=qr" target="_blank"><img src="assets/Instagram.png"></a>
+                <a href="https://wa.me/77085343491?text=Hello%20there!" target="_blank"><img src="assets/WhatsUp-icon.png"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section" style="width: 25%">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="#">Address: Kazakhstan, Kaskelen</a></li>
+                <li><a href="#">Abylaikhan 1/1</a></li>
+                <li><a href="mailto:erkezhandauletkhan@gmail.com">Email: erkezhandauletkhan@gmail.com</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="JS/scolarship.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style-contact.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+</head>
+<body>
+        <header>
+            <nav>
+                <div class="logo">StudyNavigator</div>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="opportunities.html">Opportunities</a></li>
+                    <li><a href="scolarships.html">Scholarships</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="contact.html" style="color: #5ed3a4; font-weight: bold;">Contact</a></li>
+                </ul>
+                <div class="auth-links">
+                </div>
+            </nav>
+        </header>
+        <section class="contact-us">
+            <div class="title-image">
+                <h1 class="country-title">Contact Us</h1>
+            </div>
+            <div class="container">
+                <div class="contact-left">
+                    <h2>Get in touch</h2>
+                    <p>Have questions about studying abroad or need help finding the right program? Our team is here to support you with expert advice, personalized recommendations, and step-by-step guidance. Reach out to us and take the first step toward your global education journey.</p>
+                    <form
+                      id="contactForm"
+                      class="contact-form"
+                    >
+                      <label for="name">Name:</label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="user_name"
+                        required
+                      />
+
+                      <label for="email">Email:</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="user_email"
+                        required
+                      />
+
+                      <label for="message">Message:</label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        required
+                      ></textarea>
+
+                      <button type="submit" onclick="sendMail()">Send</button>
+                    </form>
+
+                </div>
+
+                <div class="contact-right">
+                    <img src="assets/map.png" alt="Contact Image">
+                    <div class="contact-info">
+                        <p><strong>Address:</strong> Abylaikhan 1/1</p>
+                        <p><strong>City:</strong> Kaskelen, Kazakhstan</p>
+                        <p><strong>Phone:</strong> +7 (708) 534 3491</p>
+                        <p><strong>Email:</strong>erkezhandauletkhan@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <footer>
+        <div class="footer-logo">
+            <h2>StudyNavigator</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/timurovnaa_e?igsh=MWNkNGdrb3NocDN6NQ%3D%3D&utm_source=qr" target="_blank"><img src="assets/Instagram.png"></a>
+                <a href="https://wa.me/77085343491?text=Hello%20there!" target="_blank"><img src="assets/WhatsUp-icon.png"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section" style=" width: 25%">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="#">Address: Kazakhstan, Kaskelen</a></li>
+                <li><a href="#">Abylaikhan 1/1</a></li>
+                <li><a href="erkezhandauletkhan@gmail.com">Email: erkezhandauletkhan@gmail.com</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+# Country Study Navigator
+
+This is an interactive web application that helps users explore study opportunities and country-specific information. It includes user registration, login/logout functionalities, and an interactive map to view countries and their study opportunities.
+
+## Features
+
+1. **User Registration**:
+
+   * Users can create an account by entering a **username**, **email**, and **password**.
+   * The system checks for duplicate emails and validates the password length.
+
+2. **User Login**:
+
+   * Registered users can log in with their **email** and **password**.
+   * The system authenticates the user and redirects them to the home page upon successful login.
+
+3. **User Logout**:
+
+   * Logged-in users can log out, which clears the session and redirects them to the login page.
+
+4. **Interactive Map**:
+
+   * Users can hover over or click on countries to view detailed information about the selected country.
+   * When a country is clicked, the user is redirected to a dedicated study page for that country.
+
+5. **Scholarship Filtering**:
+
+   * Users can filter available scholarships by **city** and **level** (e.g., PhD, Master) using dropdown menus.
+   * The filtered scholarships are displayed dynamically with relevant details such as title, date, city, and image.
+
+## Installation and Usage
+
+1. **Clone or Download the Project**:
+
+   * Download or clone the repository to your local machine.
+   * Open the project in your preferred code editor.
+
+2. **Open the Project**:
+
+   * Open the `index.html` (or any other HTML file, like `home.html`, `detail.html`) in your browser to start using the application.
+
+## File Structure
+
+```
+/country-study-navigator
+    /assets
+        /images               # Folder containing images (e.g., country flags, scholarship images)
+    /styles
+        style.css             # Main CSS file for styling the pages
+    /JS
+        script.js             # JavaScript file containing all the functionality
+    index.html                # Landing page with the map and scholarship information
+    home.html                 # Home page showing country details and scholarships
+    detail.html               # Detailed page showing information about the selected country
+    login.html                # Login page for users to sign in
+    register.html             # Registration page for new users
+```
+
+## How It Works
+
+### User Registration:
+
+* **Registration Form**: Users can fill in the **username**, **email**, and **password** fields on the registration page.
+* **Validation**: The system checks that all fields are filled and that the password is at least 6 characters long. It also checks if the email is already registered.
+* **Storing Data**: If the registration is successful, the user data is stored in the `localStorage`, and the user is redirected to the login page.
+
+### User Login:
+
+* **Login Form**: Users can enter their **email** and **password** on the login page.
+* **Authentication**: The system checks if the credentials match any stored users in `localStorage`. If they match, the user is logged in and redirected to the home page.
+* **Session**: The system stores the current user's data in `localStorage` to maintain the session.
+
+### User Logout:
+
+* Users can log out by clicking the **Logout** link. This will remove the current user from the session (`localStorage`) and redirect the user to the login page.
+
+### Interactive Map:
+
+* **SVG Map**: Countries are represented in an SVG format. When the user hovers over a country, the fill color changes to highlight the country. A tooltip with the country name appears next to the mouse pointer.
+* **Redirection**: When a country is clicked, the user is redirected to the `detail.html` page for that country’s specific information.
+
+### Scholarship Filtering:
+
+* Users can filter scholarships by **city** and **level** using dropdown menus.
+* The available scholarships are filtered based on the selected criteria, and the results are displayed dynamically with their details such as title, date, city, and image.
+
+### JavaScript DOM Manipulation
+
+The application uses JavaScript to interact with the DOM (Document Object Model) and dynamically update the content of the page based on user input and interactions. Here’s how JavaScript is used:
+
+* **Form Validation**:
+
+  * JavaScript retrieves values entered by the user in input fields using `document.getElementById()` and validates the inputs before allowing form submission.
+
+    ```javascript
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    ```
+  * It checks if all fields are filled and ensures the password is at least 6 characters long.
+
+* **Event Listeners**:
+
+  * JavaScript adds event listeners to interact with user actions like form submission, mouseover, and click events.
+
+    ```javascript
+    form.addEventListener('submit', function (e) { ... });
+    e.addEventListener('mouseover', function () { ... });
+    ```
+
+* **Displaying Content Dynamically**:
+
+  * JavaScript dynamically updates the content on the page based on the selected country, including details such as the country’s name, capital, and images. The content is displayed in specific HTML elements using `document.getElementById()` to target those elements.
+
+    ```javascript
+    document.getElementById("country-name").innerText = data.name;
+    document.getElementById("country-image").src = data.image;
+    ```
+
+* **Tooltip Handling**:
+
+  * When a user hovers over a country on the map, JavaScript listens for the `mouseover` event and updates the position and visibility of a tooltip with the country’s name.
+
+    ```javascript
+    window.onmousemove = function (j) {
+      const x = j.clientX;
+      const y = j.clientY;
+      const tooltip = document.getElementById('name');
+      tooltip.style.top = y + 10 + 'px';
+      tooltip.style.left = x + 10 + 'px';
+    }
+    ```
+
+### JavaScript APIs
+
+* **localStorage**:
+
+  * The application uses the **localStorage API** to store and retrieve user data (such as registration details and the current logged-in user) on the client side.
+  * **Storing Data**:
+
+    ```javascript
+    localStorage.setItem('users', JSON.stringify(users));
+    ```
+  * **Retrieving Data**:
+
+    ```javascript
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    ```
+  * **Managing Sessions**: The current user’s data is stored in `localStorage` under the key `currentUser` to maintain the user session.
+
+## Technologies Used
+
+* **HTML** for the structure of the pages.
+* **CSS** for styling and making the pages visually appealing.
+* **JavaScript** for functionality such as user authentication, map interaction, and scholarship filtering.
+* **localStorage** for storing user data and session information.
