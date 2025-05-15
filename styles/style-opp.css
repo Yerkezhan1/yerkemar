@@ -1,0 +1,212 @@
+
+        #name {
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            width: fit-content;
+            opacity: 0;
+            border-radius: 5px;
+            border: 3px solid rgb(245, 128, 128);
+            padding: 0px 5px;
+            font-size: 1.5rem;
+        }
+
+        #timeCont {
+            background-color: white;
+            width: fit-content;
+            font-size: 1.5rem;
+            padding: 5px 5px;
+            border-radius: 5px;
+            border: 3px solid rgb(245, 128, 128);
+        }
+
+        svg path {
+            cursor: pointer;
+        }
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Apply the Poppins font family */
+}
+
+/* Header Styles */
+header {
+    margin-top: -5px;
+    background: White;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Make sure it's always above other content */
+    padding: 0px 35px;
+    transition: top 0.3s ease-in-out; /* Smooth transition when moving */
+}
+nav .auth-link {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bolder;
+    transition: color 0.3s;
+    padding: 10px 10px 5px 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 5px;
+}
+
+nav .logo {
+    font-size: 32px;
+    color: #295943;
+}
+
+nav .nav-links {
+    display: flex;
+    list-style: none;
+    /*border: 3px black solid;*/
+    padding: 10px 45px 5px 20px;
+}
+
+nav .nav-links li {
+    margin: 0 30px;
+}
+
+nav .nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav .nav-links li a:hover {
+    color: #43B97F;
+}
+
+        /* Footer */
+        footer {
+            z-index: 0;
+            background-color: #295943;
+            color: white;
+            padding: 50px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+
+        /* StudyNavigator Section */
+        .footer-logo {
+            width: 20%;
+            margin-right: 100px;
+        }
+
+        .footer-logo h2 {
+            font-size: 28px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo p {
+            font-size: 14px;
+            font-weight: lighter;
+            margin: 0;
+            color: white;
+        }
+
+        .footer-logo .social-icons {
+        }
+
+        .footer-logo .social-icons a img{
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        /* Links, Services, Contact Section */
+        .footer-section {
+            width: 18%;
+            padding: 10px;
+            /*border: black 3px solid;*/
+        }
+
+        .footer-section h3 {
+            font-size: 16px;
+            font-weight: bolder;
+            margin-bottom: 20px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 10px 0;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: lighter;
+        }
+
+        .footer-section ul li a:hover {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            footer {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-logo,
+            .footer-section {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .footer-logo {
+                margin-bottom: 30px;
+            }
+        }
+
+.title-image {
+    background: url("../assets/countries/Background.png") no-repeat center center/cover;
+    height: 300px;
+    margin-bottom: 60px;
+}
+
+.country-title {
+  color: white;
+  font-size: 28px;
+  padding: 220px 0 0 120px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 100px;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+    margin-left: 19%;
+    margin-bottom: 60px;
+    width: 60%;
+}

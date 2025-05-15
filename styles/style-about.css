@@ -1,0 +1,296 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Apply the Poppins font family */
+}
+
+/* Header Styles */
+header {
+    margin-top: -5px;
+    background: White;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Make sure it's always above other content */
+    padding: 0px 35px;
+    transition: top 0.3s ease-in-out; /* Smooth transition when moving */
+}
+nav .auth-link {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bolder;
+    transition: color 0.3s;
+    padding: 10px 10px 5px 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 5px;
+}
+
+nav .logo {
+    font-size: 32px;
+    color: #295943;
+}
+
+nav .nav-links {
+    display: flex;
+    list-style: none;
+    /*border: 3px black solid;*/
+    padding: 10px 45px 5px 20px;
+}
+
+nav .nav-links li {
+    margin: 0 30px;
+}
+
+nav .nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav .nav-links li a:hover {
+    color: #43B97F;
+}
+
+        /* Footer */
+        footer {
+            z-index: 0;
+            background-color: #295943;
+            color: white;
+            padding: 50px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+
+        /* StudyNavigator Section */
+        .footer-logo {
+            width: 20%;
+            margin-right: 100px;
+        }
+
+        .footer-logo h2 {
+            font-size: 28px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo p {
+            font-size: 14px;
+            font-weight: lighter;
+            margin: 0;
+            color: white;
+        }
+
+        .footer-logo .social-icons {
+        }
+
+        .footer-logo .social-icons a img{
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        /* Links, Services, Contact Section */
+        .footer-section {
+            width: 18%;
+            padding: 10px;
+            /*border: black 3px solid;*/
+        }
+
+        .footer-section h3 {
+            font-size: 16px;
+            font-weight: bolder;
+            margin-bottom: 20px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 10px 0;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: lighter;
+        }
+
+        .footer-section ul li a:hover {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            footer {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-logo,
+            .footer-section {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .footer-logo {
+                margin-bottom: 30px;
+            }
+        }
+
+.title-image {
+    background: url("../assets/img_2.png") no-repeat center center/cover;
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+.country-title {
+  color: white;
+  font-size: 28px;
+  padding: 220px 0 0 120px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+/* Features Layout */
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 150px;
+}
+
+.feature {
+    text-align: center;
+    flex: 1;
+}
+
+.feature img {
+    width: 100px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 18px;
+    color: #111;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.feature p {
+    color: #333;
+    font-size: 14px;
+}
+
+/* About Section */
+.about-us {
+    display: flex;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-text {
+  margin-top: 5%;
+  width: 70%;
+}
+
+.about-us h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.about-image img {
+    height: 450px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.team h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.team-members {
+    display: flex;
+    justify-items: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.team-member {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.team-member img {
+    width: 220px;
+    height: 260px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.team-member h4 {
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

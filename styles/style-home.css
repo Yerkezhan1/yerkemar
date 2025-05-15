@@ -1,0 +1,467 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Apply the Poppins font family */
+}
+
+/* Header Styles */
+header {
+    margin-top: -5px;
+    background: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Make sure it's always above other content */
+    padding: 0px 58px;
+    transition: top 0.3s ease-in-out; /* Smooth transition when moving */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 5px;
+}
+
+nav .logo {
+    font-size: 32px;
+    color: white;
+}
+
+nav .auth-link {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+    transition: color 0.3s;
+    padding: 10px 10px 5px 10px;
+}
+
+nav .sign:hover {
+    color: #5ed3a4;
+}
+
+nav .nav-links {
+    display: flex;
+    list-style: none;
+    /*border: 3px black solid;*/
+    padding: 10px 35px 5px 10px;
+}
+
+nav .nav-links li {
+    margin: 0 30px;
+}
+
+nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav .nav-links li a:hover {
+    color: #43B97F;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url("../assets/img_1.png") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* To stack the navbar and content vertically */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 2; /* Ensures content appears above the background */
+}
+
+.hero-content {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.hero p {
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 0 auto 30px; /* top/bottom and horizontal centering */
+    line-height: 1.5;
+    width: 70%;
+    /*border: 3px black solid;*/
+    text-align: center; /* ⬅ optional, but keeps text centered inside */
+}
+
+.hero-buttons .btn {
+    background-color: #43B97F;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #48b07a;
+}
+
+/* Section Styles */
+.stats {
+    margin-top: 450px;
+    padding: 120px 80px;
+}
+
+        .circle-container {
+            position: relative;
+            width: 1200px;
+            height: 400px;
+            z-index: 1;
+            /*border: 3px black solid;*/
+        }
+        .circle1 {
+            position: absolute;
+            width: 280px;
+            height: 480px;
+            border-radius: 110px;
+            background: url("../assets/c3.png") no-repeat center center/cover;
+        }
+        .circle2 {
+            position: absolute;
+            width: 200px;
+            height: 360px;
+            border-radius: 110px;
+            border: 10px white solid;
+            background: url("../assets/c2.png") no-repeat center center/cover;
+            left: 210px;
+            top: 135px;
+        }
+        .circle3 {
+            position: absolute;
+            width: 180px;
+            height: 330px;
+            border-radius: 150px;
+            border: 10px white solid;
+            background: url("../assets/c1.png") no-repeat center center/cover;
+            left: 360px;
+            top: -20px;
+        }
+
+        .stats-text {
+            width: 80%;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: white;
+            z-index: 1;
+            /*border: 3px black solid;*/
+        }
+
+        .mini-text {
+            font-size: 14px;
+            font-weight: 700;
+            color: #295943;
+            margin-bottom: 20px;
+        }
+
+        .header-text {
+            font-size: 28px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .intro-text {
+            font-size: 14px;
+            font-weight: 400;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .stats-overview {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            font-size: 12px;
+            color: #333;
+        }
+
+        .stat-item {
+            /*padding: 10px;*/
+            text-align: left;
+        }
+
+        .stat-value {
+            font-size: 22px;
+            font-weight: bold;
+            color: #295943;
+        }
+
+        .stat-description {
+            font-size: 14px;
+            font-weight: 400;
+            color: #333;
+        }
+
+        .stats-content {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        /* Section container */
+        .featured-destinations {
+            padding: 60px 0;
+            z-index: 0;
+            margin-bottom: 50px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .header p {
+            font-size: 16px;
+            font-weight: bold;
+            color: #295943;
+        }
+
+        .destinations {
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .destination-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            text-align: left;
+            padding: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .destination-card h3 {
+            font-size: 16px;
+            color: #333;
+            margin-top: 25px;
+        }
+
+        .destination-card p {
+            font-size: 14px;
+            font-weight: bold;
+            color: #295943;
+            padding: 25px 0;
+        }
+
+        @media (max-width: 768px) {
+            .destinations {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .destinations {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+    /* USER Section Container */
+    .user-feedback-section {
+        margin-bottom: 100px;
+        z-index: 0;
+    }
+
+    .user-container {
+        padding: 0 150px;
+        margin: 0 auto;
+    }
+
+    /* Testimonials Grid */
+    .testimonials {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .testimonial-card {
+        color: #333;
+        background-color: #fff;
+        padding: 20px 20px;
+        text-align: left;
+        width: 300px;
+        transition: background-color 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+        transform: translateY(-5px);
+        background-color: #43B97F;
+        color: white;
+    }
+
+    .photo-name {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .photo-name img {
+        width: 55px;
+        height: 55px;
+        border-radius: 100%;
+    }
+
+    .testimonial-card h3 {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .testimonial-card p {
+        font-size: 12px;
+        margin-top: 5px;
+        width: 250px;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+        .testimonials {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 200px) {
+        .testimonials {
+            grid-template-columns: 1fr;
+        }
+    }
+
+        /* Footer */
+        footer {
+            z-index: 0;
+            background-color: #295943;
+            color: white;
+            padding: 50px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+
+        /* StudyNavigator Section */
+        .footer-logo {
+            width: 20%;
+            margin-right: 100px;
+        }
+
+        .footer-logo h2 {
+            font-size: 28px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo p {
+            font-size: 14px;
+            font-weight: lighter;
+            margin: 0;
+            color: white;
+        }
+
+        .footer-logo .social-icons {
+        }
+
+        .footer-logo .social-icons a img{
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        /* Links, Services, Contact Section */
+        .footer-section {
+            width: 18%;
+            padding: 10px;
+            /*border: black 3px solid;*/
+        }
+
+        .footer-section h3 {
+            font-size: 16px;
+            font-weight: bolder;
+            margin-bottom: 20px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 10px 0;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: lighter;
+        }
+
+        .footer-section ul li a:hover {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            footer {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-logo,
+            .footer-section {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .footer-logo {
+                margin-bottom: 30px;
+            }
+        }

@@ -1,0 +1,195 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Apply the Poppins font family */
+}
+
+/* Login/Register Card */
+.register-card {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.register-title {
+  margin-bottom: 25px;
+  font-size: 32px;
+  color: #333;
+  font-weight: 700;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form input {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.register-form input::placeholder {
+  color: #999;
+}
+
+.register-form input:focus {
+  outline: none;
+  border-color: #43B97F;
+  box-shadow: 0 0 5px rgba(67,185,127,0.4);
+}
+
+.btn-register {
+  background-color: #43B97F;
+  color: #fff;
+  padding: 0.75rem;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-bottom: 10px;
+}
+
+.btn-register:hover {
+  background-color: #379f6b;
+  transform: translateY(-2px);
+}
+
+.btn-register:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .register-card {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+}
+
+.register-section {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+.hero-img img{
+
+}
+.hero-img-login img{
+    width: 820px;
+    height: 723px;
+}
+
+
+.register-link {
+  color: #43B97F;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.register-link:hover {
+  color: #379f6b;
+  text-decoration: underline;
+}
+
+/* Layout for login + illustration */
+.login-section {
+  display: flex;
+  background: #f5f7fa;
+}
+
+/* Login/Register Card */
+.login-card {
+  max-width: 60%;
+  width: 100%;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 100px auto;
+}
+
+/* Title */
+.login-title {
+  margin-bottom: 2rem;
+  font-size: 32px;
+  color: #333;
+  font-weight: 700;
+}
+
+
+/* Form inputs */
+.login-form {
+}
+
+.login-form input {
+  padding: 0.75rem 1rem;
+    margin: 0 auto 1rem;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 50%;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-form input::placeholder {
+  color: #999;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #43B97F;
+  box-shadow: 0 0 5px rgba(67, 185, 127, 0.4);
+}
+
+/* Login/Register button */
+.btn-login {
+    margin: 0 auto 1rem;
+    width: 50%;
+  background-color: #43B97F;
+  color: #fff;
+  padding: 0.75rem;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-login:hover {
+  background-color: #379f6b;
+  transform: translateY(-2px);
+}
+
+.btn-login:active {
+  transform: translateY(0);
+}
+
+/* “Or register/login” link */
+.alternate-action {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #666;
+}
+
+.alternate-action .login-link {
+  color: #43B97F;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.alternate-action .login-link:hover {
+  color: #379f6b;
+  text-decoration: underline;
+}
+
+
